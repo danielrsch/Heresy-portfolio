@@ -1,0 +1,9 @@
+[build]
+  # If your files are in the root, use "." 
+  # If you move them to a folder like 'dist' later, change this to "dist"
+  publish = "."
+
+[[redirects]]
+from = '/*'
+to = "/main.html"
+status = 200
