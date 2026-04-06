@@ -1,0 +1,102 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Using a serif font stack for a 'reading' or 'editorial' feel */
+    font-family: "Iowan Transition", "Apple Garamond", "Baskerville", "Times New Roman", serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd; /* Slightly off-white to reduce eye strain */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Typography */
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.bio {
+    margin-bottom: 2.5rem;
+    font-style: italic;
+    color: #555;
+}
+
+/* Links List */
+.links ul {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.links a:hover {
+    opacity: 0.6;
+}
+
+/* Buttons/Actions */
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-download, .btn-contact {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: 1px solid #333;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.btn-download {
+    background-color: transparent;
+}
+
+.btn-contact {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-download:hover, .btn-contact:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Footer */
+footer {
+    margin-top: 4rem;
+    font-size: 0.8rem;
+    color: #999;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
